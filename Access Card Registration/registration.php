@@ -26,6 +26,7 @@
         if ($result) {
             echo "<div class='form'>
                   <h3>You are registered successfully.</h3><br/>
+                  <p class='link'>Click here to go to<a href='registration.php'>registration</a>form again.</p>
                   </div>";
         } else {
             echo "<div class='form'>
