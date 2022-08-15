@@ -39,19 +39,12 @@
     <form class="form" action="validate.php" method="post">
         <h1 class="login-title">Registration</h1>
         <input type="text" class="login-input" name="name" placeholder="Employee Name" required />
-        <input type="text" class="login-input" name="rfid_code" placeholder="RFID number">
-        <input type="password" class="login-input" name="pin" placeholder="Entry Pin">
-        <input type="text" class="login-input" name="sms_number" placeholder="Phone Number">
+        <input type="text" class="login-input" name="rfid_code" placeholder="RFID number" required>
+        <input type="password" class="login-input" name="pin" placeholder="Entry Pin" required>
+        <input type="text" class="login-input" name="sms_number" placeholder="Phone Number" required>
         <input type="submit" name="submit" value="Register" class="login-button">
     </form>
 <?php
-        $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER{REQUEST_URL]";
-        
-        if (strpos($fullUrl, "registration=empty") == true) {
-            echo "<p class='error'> You did not fill all the fields!</p>";
-            exit();
-        }
-    }
 ?>
 </body>
 </html>
