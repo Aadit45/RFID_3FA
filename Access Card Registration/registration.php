@@ -30,13 +30,13 @@
                   </div>";
         } else {
             echo "<div class='form'>
-                  <h3>Required fields are missing.</h3><br/>
+                  <h3>Unsuccessful are missing.</h3><br/>
                   <p class='link'>Click here to <a href='registration.php'>registration</a> again.</p>
                   </div>";
         }
     } else {
 ?>
-    <form class="form" action="" method="post">
+    <form class="form" action="validate.php" method="post">
         <h1 class="login-title">Registration</h1>
         <input type="text" class="login-input" name="name" placeholder="Employee Name" required />
         <input type="text" class="login-input" name="rfid_code" placeholder="RFID number">
