@@ -20,7 +20,7 @@
         $pin = mysqli_real_escape_string($con, $pin);
         $sms_number = stripslashes($_REQUEST['sms_number']);
         $sms_number = mysqli_real_escape_string($con, $sms_number);
-        $query    = "INSERT into `users` (name, rfid_code, pin, sms_number)
+        $query    = "INSERT into `access_list` (name, rfid_code, pin, sms_number)
                      VALUES ('$name', '$rfid_code', '$pin', '$sms_number')";
         $result   = mysqli_query($con, $query);
         if ($result) {
