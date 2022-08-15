@@ -40,7 +40,7 @@
         <input type="text" class="login-input" name="name" placeholder="Employee Name" required />
         <input type="text" class="login-input" name="rfid_code" placeholder="RFID number">
         <input type="password" class="login-input" name="pin" placeholder="Entry Pin">
-        <input type="number" class="login-input" name="sms_number" placeholder="Phone Number">
+        <input type="text" class="login-input" name="sms_number" placeholder="Phone Number">
         <input type="submit" name="submit" value="Register" class="login-button">
     </form>
 <?php
