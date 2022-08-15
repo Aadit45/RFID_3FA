@@ -45,6 +45,12 @@
         <input type="submit" name="submit" value="Register" class="login-button">
     </form>
 <?php
+        $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER{REQUEST_URL]";
+        
+        if (strpos($fullUrl, "registration=empty") == true) {
+            echo "<p class='error'> You did not fill all the fields!</p>";
+            exit();
+        }
     }
 ?>
 </body>
